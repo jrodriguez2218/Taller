@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartelera: Caso Juan Pérez</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&amp;family=Inter:wght@400;600&amp;display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:0;background:#F2EFE6}
+.page{width:92%;max-width:1220px;margin:0 auto;background:#F2EFE6;display:flex;flex-direction:column}
+.site-header{width:100vw;margin-left:calc((1220px - 100vw)/2);background:#141413;color:#FAF9F5}
+.header-inner{max-width:1220px;width:92%;margin:0 auto;padding:44px 0;display:flex;justify-content:space-between;align-items:center;gap:32px}
+.header-copy{flex:1 1 720px;min-width:0}
+.header-copy h1{font-size:42px!important;line-height:1.15!important}
+.header-copy .subtitle{font-size:18px!important}
+.brand{flex:0 0 240px;width:240px;height:210px;position:relative;overflow:hidden;font-family:Inter,Arial,sans-serif}
+.brand strong{display:block;font:800 25px Fraunces,Georgia,serif;letter-spacing:.04em}
+.content{padding:48px 0 56px;display:flex;flex-direction:column;gap:40px}
+.case-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:stretch}
+.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.metrics .q{padding:18px;min-width:0}
+.metrics .q div{font-size:clamp(20px,2vw,25px);line-height:1.15;white-space:nowrap}
+.metrics .q span{display:block;line-height:1.45}
+@media(max-width:800px){.site-header{width:100%;margin-left:0}.header-inner{padding:36px 0;flex-direction:column;align-items:stretch}.brand{align-self:flex-start}.case-grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.content{padding:36px 0}.g{grid-template-columns:1fr!important}}
+.k{font:600 13px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#9C3F20;margin:0 0 16px}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.c{background:#fff;border:1px solid #D9D5C8;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:12px;font-family:Inter,Arial,sans-serif}
+.t{display:flex;align-items:center;gap:12px;font-size:19px;color:#141413}
+.n{display:inline-flex;align-items:center;justify-content:center;min-width:40px;height:40px;border-radius:20px;background:#141413;color:#FAF9F5;font:600 15px Inter,Arial,sans-serif}
+.v{font:800 40px Fraunces,Georgia,serif;color:#9C3F20}
+.s{font-size:13px;color:#5A574F}
+.c p,.st p{margin:0;font-size:15px;line-height:1.5;color:#3F3D38}
+.q{background:#FAF9F5;border-radius:10px;padding:20px;font-family:Inter,Arial,sans-serif}
+.q div{font:800 34px Fraunces,Georgia,serif;color:#141413}
+.q span{font-size:14px;color:#3F3D38}
+.k2{background:#fff;border:1px solid #D9D5C8;border-radius:10px;padding:26px}
+.k2 h3{margin:0 0 10px;font:600 22px Fraunces,Georgia,serif;color:#141413}
+.k2 p{margin:0;font:400 16px/1.5 Inter,Arial,sans-serif;color:#3F3D38}
+.st{display:flex;gap:16px;align-items:flex-start;font-family:Inter,Arial,sans-serif;font-size:17px;color:#141413}
+/* Infografía editorial centrada */
+body{background:#F2EFE6}
+.page{width:92%;max-width:1120px;margin:28px auto;background:transparent;gap:24px}
+.top-card{border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(20,20,19,.10);background:#fff}
+.site-header{width:100%;margin:0;background:#141413}
+.header-inner{max-width:none;width:100%;padding:30px 36px;gap:28px}
+.header-copy{flex:1 1 720px}
+.header-copy h1{font-size:36px!important;line-height:1.15!important}
+.header-copy .subtitle{font-size:16px!important}
+.brand{flex-basis:240px}
+.case-summary{background:#fff;padding:0 36px 22px}
+.case-strip{display:flex;align-items:flex-start;gap:18px;padding:22px 0 18px}
+.case-strip p{flex:1}
+.case-pill{flex:0 0 auto;background:#9C3F20;color:#FAF9F5;border-radius:999px;padding:8px 13px;font:600 11px/1.2 Inter,Arial,sans-serif;letter-spacing:.1em}
+.metrics{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.metrics .q{padding:14px}
+.content{padding:0;gap:24px}
+.section-heading{display:flex;align-items:center;gap:12px;margin:0 0 14px;font:600 23px/1.2 Fraunces,Georgia,serif;color:#141413}
+.section-heading span{display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border-radius:9px;background:#141413;color:#FAF9F5;font:600 17px Inter,Arial,sans-serif}
+.g{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.c{background:#fff;border-radius:12px;padding:18px 22px;box-shadow:0 2px 8px rgba(0,0,0,.04);gap:8px}
+.t{display:grid;grid-template-columns:32px minmax(0,1fr) auto;align-items:center;gap:10px;font-size:16px}
+.t:before{content:"";grid-column:1;grid-row:1;width:32px;height:32px;border-radius:8px;background:#9C3F20}
+.t b{grid-column:2;grid-row:1}
+.t .n{grid-column:3;grid-row:1;order:0;min-width:0;width:auto;height:auto;background:none;color:#9C3F20;border-radius:0;font:600 13px Inter,Arial,sans-serif}
+.v{font:800 22px/1.2 Fraunces,Georgia,serif;color:#9C3F20;margin:10px 0 2px}
+.c p{font-size:13px;line-height:1.45}
+.s{font-size:12px}
+.k2{padding:20px}
+.k2 h3{font-size:20px}
+.st{font-size:15px}
+@media(max-width:760px){.page{width:94%;margin:16px auto}.header-inner{padding:26px 22px;flex-direction:column;align-items:flex-start}.header-copy h1{font-size:32px!important}.brand{align-self:center}.case-summary{padding:0 22px 18px}.case-strip{flex-direction:column}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.g{grid-template-columns:1fr}.section-heading{font-size:20px}}
+/* Anchos unificados */
+.page{width:92%;max-width:1120px;margin:32px auto}
+.top-card,main.content{width:100%;max-width:1120px;margin-left:auto;margin-right:auto}
+.site-header{width:100%;max-width:1120px;margin:0}
+@media(max-width:760px){.page{width:92%;max-width:1120px;margin:32px auto}}
+/* Acabado editorial de la sección de cuantías */
+.rights-section{font-family:Inter,Arial,sans-serif}
+.rights-section .section-heading{align-items:center;gap:13px;margin-bottom:14px}
+.rights-section .section-heading>span{width:38px;height:38px;border:1px solid #141413;border-radius:50%;background:#141413;color:#FFFFFF;font:700 16px Inter,Arial,sans-serif}
+.rights-section .section-heading>b{font:800 25px/1.15 Fraunces,Georgia,serif;letter-spacing:-.02em}
+.section-subtitle{margin-left:auto;color:#5A574F;font:500 11px/1.4 Inter,Arial,sans-serif;letter-spacing:.035em;text-align:right}
+.distribution{padding:16px 20px 14px;margin:0 0 18px;background:#FFFFFF;border:1px solid #E8E3D6;border-radius:12px;box-shadow:0 4px 16px rgba(20,20,19,.035)}
+.distribution-title{margin:0 0 10px;color:#5A574F;font:600 10px Inter,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.distribution-bar{display:flex;height:11px;overflow:hidden;border-radius:999px;background:#F5F1E8}
+.distribution-bar span{height:100%}
+.distribution-bar span:nth-child(1){width:39%;background:#A64B2A}
+.distribution-bar span:nth-child(2){width:21%;background:#141413}
+.distribution-bar span:nth-child(3){width:18%;background:#D97757}
+.distribution-bar span:nth-child(4){width:13%;background:#9C3F20}
+.distribution-bar span:nth-child(5){width:9%;background:#5A574F}
+.distribution-legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:11px}
+.legend-item{display:flex;align-items:center;gap:6px;color:#3F3D38;font:500 11px/1.3 Inter,Arial,sans-serif}
+.legend-item b{font-weight:700;color:#141413}
+.legend-dot{width:7px;height:7px;border-radius:50%;flex:0 0 7px}
+.rights-section .g{gap:15px}
+.rights-section .c{position:relative;gap:10px;padding:18px 20px 17px;border:1px solid #E8E3D6;border-radius:14px;box-shadow:0 5px 18px rgba(20,20,19,.045);transition:transform .2s ease,box-shadow .2s ease}
+.rights-section .c:hover{transform:translateY(-2px);box-shadow:0 9px 24px rgba(20,20,19,.08)}
+.rights-section .c .t{display:flex;min-height:36px;gap:10px;font-size:15px;line-height:1.3}
+.rights-section .t:before{display:none}
+.rights-section .icon-box{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:10px;background:rgba(166,75,42,.10);color:#A64B2A}
+.rights-section .icon-box svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.rights-section .c .t>b{flex:1;min-width:0;font-weight:600}
+.rights-section .card-meta{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin-left:auto;white-space:nowrap}
+.rights-section .card-meta .n{order:0;width:auto;height:auto;min-width:0;padding:0;border:0;border-radius:0;background:none;color:#A64B2A;font:700 11px Inter,Arial,sans-serif}
+.rights-section .legal-ref{color:#77736B;font:500 9px Inter,Arial,sans-serif;letter-spacing:.015em}
+.rights-section .lead-label{margin:-2px 0 0 46px;color:#A64B2A;font:700 9px Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.rights-section .amount-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:1px}
+.rights-section .v{margin:0;color:#A64B2A;font:800 23px/1.15 Fraunces,Georgia,serif}
+.rights-section .s{flex:0 0 auto;padding:3px 8px;border-radius:999px;background:#F5F1E8;color:#A64B2A;font:700 10px Inter,Arial,sans-serif}
+.rights-section .progress-track{height:4px;overflow:hidden;border-radius:99px;background:#F0ECE3}
+.rights-section .progress-track>div{height:100%;border-radius:inherit;background:#A64B2A}
+.rights-section .c>p{padding-top:10px;border-top:1px solid #F0ECE3;color:#3F3D38;font-size:12px;line-height:1.5}
+.rights-section .c.featured{border:1.5px solid rgba(166,75,42,.45);background:linear-gradient(145deg,#FFFFFF 65%,rgba(166,75,42,.035))}
+@media(max-width:760px){.rights-section .section-heading{flex-wrap:wrap}.rights-section .section-heading>b{font-size:21px}.section-subtitle{flex-basis:100%;margin-left:51px;text-align:left}.distribution-legend{gap:8px 12px}.rights-section .g{grid-template-columns:1fr}}
+/* Saludo integrado al isotipo SENA */
+.brand{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.brand svg{display:block;width:175px;height:165px;flex:0 0 165px;overflow:visible}
+.brazo-sena-animado{transform-box:view-box;transform-origin:126px 78px;animation:saludarBrazoSena 2.6s ease-in-out 1 both}.sena-saludo{opacity:1;animation:saludoSale .35s ease 2.8s forwards}.sena-estatico{opacity:0;animation:logoEntra .4s ease 2.8s forwards}
+.greeting-text,.digital-label{display:block;text-align:center;font:700 10px/1.2 Inter,Arial,sans-serif;letter-spacing:.14em;white-space:nowrap}
+.greeting-text{position:absolute;left:0;right:0;bottom:7px;color:#39A900;animation:despedirSaludo .35s ease 2.8s forwards}
+.digital-label{position:absolute;left:0;right:0;bottom:7px;color:#E6E2D6;opacity:0;animation:mostrarCartelera .4s ease 2.8s forwards}
+@keyframes saludarBrazoSena{0%,100%{transform:rotate(0deg)}20%{transform:rotate(-7deg)}40%{transform:rotate(1deg)}60%{transform:rotate(-8deg)}80%{transform:rotate(0deg)}}@keyframes saludoSale{to{opacity:0}}@keyframes logoEntra{to{opacity:1}}
+@keyframes despedirSaludo{to{opacity:0;visibility:hidden}}
+@keyframes mostrarCartelera{to{opacity:1}}
+/* Tema oscuro Obsidiana, Esmeralda y Ambar */
+:root{color-scheme:dark;--obsidian:#090D16;--header:#0B1120;--panel:#111827;--card:#1E293B;--card-border:#334155;--bone:#F8FAFC;--silver:#CBD5E1;--slate:#94A3B8;--emerald:#10B981;--amber:#F59E0B;--track:#0F172A}
+body{background:var(--obsidian)!important;color:var(--bone)}
+.page{background:transparent!important}
+.top-card{background:var(--panel)!important;border:1px solid var(--card-border);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.site-header{background:var(--header)!important;border-bottom:1px solid #1E293B;color:var(--bone)}
+.header-copy h1{color:var(--bone)}
+.header-copy .subtitle{color:var(--silver)!important}
+.header-copy>.k{color:var(--slate)!important}
+.case-summary{background:var(--panel)!important;color:var(--bone)}
+.case-strip p{color:var(--silver)!important}
+.case-pill{background:var(--emerald)!important;color:var(--obsidian)!important;font-weight:700}
+.metrics .q{background:var(--card)!important;border:1px solid var(--card-border);color:var(--bone)}
+.metrics .q div{color:var(--bone)!important}
+.metrics .q span{color:var(--silver)!important}
+main.content{color:var(--bone)}
+.content .k,.section-subtitle{color:var(--slate)!important}
+.rights-section .section-heading{color:var(--bone)}
+.rights-section .section-heading>span{background:var(--header);border-color:#475569;color:var(--bone)}
+.distribution{background:var(--card)!important;border:1px solid var(--card-border);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.distribution-title,.legend-item{color:var(--silver)}
+.legend-item b{color:var(--bone)}
+.distribution-bar{background:var(--track)}
+.distribution-bar span:nth-child(1){background:var(--emerald)}
+.distribution-bar span:nth-child(2){background:var(--amber)}
+.distribution-bar span:nth-child(3){background:var(--emerald)}
+.distribution-bar span:nth-child(4){background:var(--amber)}
+.distribution-bar span:nth-child(5){background:var(--emerald)}
+.legend-dot{background:var(--emerald)!important}
+.legend-item:nth-child(2) .legend-dot,.legend-item:nth-child(4) .legend-dot{background:var(--amber)!important}
+.rights-section .c{background:var(--card)!important;border:1px solid var(--card-border);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.rights-section .c:nth-child(odd) .icon-box{background:rgba(16,185,129,.14);color:var(--emerald)}
+.rights-section .c:nth-child(even) .icon-box{background:rgba(245,158,11,.14);color:var(--amber)}
+.rights-section .c .t>b{color:var(--bone)}
+.rights-section .card-meta .n{color:var(--slate)}
+.rights-section .legal-ref{color:var(--slate)}
+.rights-section .lead-label{color:var(--emerald)}
+.rights-section .v{color:var(--bone)}
+.rights-section .c:nth-child(odd) .s{background:rgba(16,185,129,.14);color:var(--emerald)}
+.rights-section .c:nth-child(even) .s{background:rgba(245,158,11,.14);color:var(--amber)}
+.rights-section .progress-track{background:var(--track)!important}
+.rights-section .progress-track>div{background:var(--emerald)!important}
+.rights-section .c:nth-child(even) .progress-track>div{background:var(--amber)!important}
+.rights-section .c>p{border-top:1px solid var(--card-border);color:var(--silver)}
+.rights-section .c.featured{border:1.5px solid rgba(16,185,129,.55)!important;background:#162436!important}
+main.content>div[style*="background:#9C3F20"]{background:linear-gradient(135deg,#B45309 0%,#92400E 100%)!important;border:1px solid rgba(245,158,11,.4);color:var(--bone)!important;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+main.content>div[style*="background:#9C3F20"] *{color:var(--bone)!important}
+.k2,.st{background:var(--card)!important;border:1px solid var(--card-border);box-shadow:0 8px 24px rgba(0,0,0,.35);color:var(--bone)}
+.k2 h3,.st b{color:var(--bone)}
+.k2 p,.st p{color:var(--silver)!important}
+.st{padding:16px;border-radius:12px}
+.st .n{background:var(--header);color:var(--bone)}
+main.content>div[style*="border-top:1px solid"]{border-color:var(--card-border)!important;color:var(--silver)!important}
+main.content>div[style*="border-top:1px solid"] p{color:var(--silver)!important}
+/* Ajuste de una sola línea para el encabezado de la sección 1 */
+.rights-section .section-heading>b{flex:1;width:auto}
+.rights-section .section-subtitle{white-space:nowrap;flex-shrink:0;font-size:13px;color:#94A3B8!important}
+.settlement-summary{margin-top:24px;padding:28px;background:#1E293B;border:1px solid #334155;border-radius:14px;color:#E2E8F0;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.settlement-summary h2{margin:0 0 18px;color:#F8FAFC;font:800 22px/1.2 Fraunces,Georgia,serif}
+.settlement-summary h2 span{margin-left:5px;color:#94A3B8;font:600 12px/1.2 Inter,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.settlement-scroll{width:100%;overflow-x:auto}
+.settlement-table{width:100%;border-collapse:collapse;font:400 13.5px/1.45 Inter,Arial,sans-serif}
+.settlement-table thead{background:#0F172A;color:#F8FAFC;font-weight:700}
+.settlement-table th,.settlement-table td{padding:11px 14px;text-align:left;vertical-align:top}
+.settlement-table th{font-weight:700}
+.settlement-table th:first-child,.settlement-table td:first-child{width:44px;color:#94A3B8}
+.settlement-table th:last-child,.settlement-table td:last-child{text-align:right;white-space:nowrap}
+.settlement-table tbody td{border-bottom:1px solid #334155}
+.settlement-table tbody td:nth-child(2){color:#E2E8F0}
+.settlement-table tbody td:nth-child(3){color:#CBD5E1}
+.settlement-table tbody td:last-child{color:#10B981;font-weight:700}
+.settlement-table tbody tr:nth-child(even) td:last-child{color:#F59E0B}
+.settlement-table tfoot{background:rgba(245,158,11,.14);border-top:1px solid rgba(245,158,11,.4);font-weight:800;color:#FBBF24}
+.settlement-table tfoot td{padding-top:13px;padding-bottom:13px}
+.settlement-table tfoot td:last-child{color:#FBBF24}
+.settlement-note{margin:14px 0 0;color:#94A3B8;font:400 12px/1.5 Inter,Arial,sans-serif}
+@media(max-width:760px){.settlement-summary{padding:20px 16px}.settlement-table{min-width:760px}.settlement-summary h2{font-size:20px}}
+/* Alineaci&oacute;n del encabezado de la secci&oacute;n 1 con la tarjeta inferior */
+.rights-section>.section-heading{width:100%;max-width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.rights-section>.section-heading>b{flex:1 1 auto;width:auto;min-width:0;margin:0}
+.rights-section>.section-heading>.section-subtitle{white-space:nowrap;flex-shrink:0;font-size:13px;color:#94A3B8!important;text-align:right}
+/* La etiqueta derecha de la cabecera 1 no hereda el estilo de la insignia */
+.rights-section>.section-heading>span{display:block;width:auto;height:auto;min-width:0;padding:0;border:0;border-radius:0;background:transparent;color:#94A3B8;font:500 13px/1.2 Inter,sans-serif;text-align:right}
+</style>
+
+</head>
+<body>
+
+<div class="page"><div class="top-card"><header class="site-header"><div class="header-inner"><div class="header-copy">
+<p class="k" style="color:#E8A88F">Cartelera digital · Foro estudio de caso · GA11-210201501-AA3-EV02</p>
+<h1 style="margin:0;font:800 42px/1.05 Fraunces,Georgia,serif">Trabajo Sin Garantías: Análisis de la Vulneración de Derechos Laborales y Precarización en Agroindustria La Esperanza S.A.S. (2025)</h1>
+<p class="subtitle" style="margin:20px 0 0;font:400 22px/1.45 Inter,Arial,sans-serif;max-width:900px;color:#E6E2D6">¿Qué derechos laborales se incumplieron en el caso de Juan Pérez y cuánto representan? Análisis del caso de Agroindustria La Esperanza S.A.S.</p>
+</div><div class="brand" aria-label="Logo SENA animado y cartelera digital"><svg width="175" height="165" viewBox="0 0 200 190" xmlns="http://www.w3.org/2000/svg" aria-label="Logo SENA">
+<g class="sena-saludo">
+  <circle cx="100" cy="24" r="16" fill="#39A900"/>
+  <path d="M50 96V84c0-15 11-25 27-25h35c11 0 19-3 27-10l8 11c-10 12-22 19-39 21l-58 7z" fill="#39A900"/>
+  <g class="brazo-sena-animado" fill="#39A900">
+    <path d="M119 76c17-5 27-15 35-28l13-22c2-4 7-3 8 1l-5 16 9-13c3-4 8-1 6 3l-8 17 11-11c4-3 8 2 5 5l-11 15 10-7c4-2 7 3 4 6l-15 17c-11 13-26 21-45 25l-17-24z"/>
+  </g>
+  <rect x="18" y="76" width="164" height="11" fill="#39A900"/>
+  <polygon points="62,87 73,87 46,137 33,137" fill="#39A900"/>
+  <polygon points="127,87 138,87 167,137 154,137" fill="#39A900"/>
+  <polygon points="100,92 54,174 71,174 100,122 129,174 146,174" fill="#39A900"/>
+  <path d="M160 19c4-7 10-11 17-13M165 24c3-5 7-8 12-9M180 58c7-3 11-8 14-15M183 63c5-2 8-5 10-9" fill="none" stroke="#39A900" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+</g>
+<g class="sena-estatico" fill="#39A900">
+  <circle cx="100" cy="24" r="16"/>
+  <text x="100" y="68" text-anchor="middle" font-family="&quot;Arial Black&quot;, Impact, sans-serif" font-weight="900" font-size="34" transform="scale(1.38, 0.95)" transform-origin="100 68">SENA</text>
+  <rect x="18" y="76" width="164" height="11"/>
+  <polygon points="18,76 93,76 62,132 45,132 69,89 18,89"/>
+  <polygon points="182,76 107,76 138,132 155,132 131,89 182,89"/>
+  <polygon points="100,92 54,174 71,174 100,122 129,174 146,174"/>
+</g>
+</svg><span class="greeting-text">¡BIENVENIDOS AL FORO!</span><span class="digital-label">CARTELERA DIGITAL</span></div></div></div></header><main class="content">
+<div class="case-summary"><div class="case-strip"><span class="case-pill">ESTUDIO DE CASO</span><p style="margin:0;font:400 16px/1.6 Inter,Arial,sans-serif;color:#141413"><b>Juan P&#233;rez</b> fue contratado en enero de 2025 como auxiliar de bodega, con contrato verbal a t&#233;rmino indefinido. Organizaba, cargaba y despachaba mercanc&#237;a de lunes a s&#225;bado, de 7:00 a. m. a 7:00 p. m., y trabajaba tres domingos al mes. La empresa incumpli&#243; salario, jornada, prestaciones, dotaci&#243;n y seguridad social durante el a&#241;o.</p></div><div class="metrics"><div class="q"><div>12 h</div><span>jornada diaria, lunes a s&#225;bado</span></div><div class="q"><div>12 meses</div><span>de servicio continuo en 2025</span></div><div class="q"><div>$1.200.000</div><span>salario, bajo el m&#237;nimo de $1.423.500</span></div><div class="q"><div>6 meses</div><span>sin salud, pensi&#243;n ni ARL</span></div></div></div></div></main></div><main class="content"><div><div class="section-heading" style="width: 100%; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 28px 0 14px;">
+  <div style="display: flex; align-items: center; gap: 12px;">
+    <span style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #334155; background: #1E293B; color: #F8FAFC; font: 700 14px/1 Inter, sans-serif; display: inline-flex; align-items: center; justify-content: center;">1</span>
+    <h2 style="margin: 0; font: 800 22px/1.2 Fraunces, Georgia, serif; color: #F8FAFC;">Derechos incumplidos y sus cuant&iacute;as</h2>
+  </div>
+  <span style="font: 500 13px/1.2 Inter, sans-serif; color: #94A3B8; text-align: right;">Desglose financiero y respaldo legal (Vigencia 2025)</span>
+</div>
+<div class="g"><div class="c"><div class="t"><span class="n">01</span><b>Salario inferior al mínimo</b></div><div class="v">$2.682.000</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:11%;background:#9C3F20;border-radius:4px"></div></div><div class="s">11 % del total</div><p>Recibió $1.200.000 y el mínimo 2025 es $1.423.500: faltan $223.500 al mes durante 12 meses.</p></div><div class="c"><div class="t"><span class="n">02</span><b>Auxilio de transporte</b></div><div class="v">$2.400.000</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:10%;background:#9C3F20;border-radius:4px"></div></div><div class="s">10 % del total</div><p>$200.000 mensuales nunca pagados. Le correspondían por ganar menos de 2 salarios mínimos.</p></div><div class="c"><div class="t"><span class="n">03</span><b>Horas extras diurnas</b></div><div class="v">$9.252.750</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:39%;background:#9C3F20;border-radius:4px"></div></div><div class="s">39 % del total</div><p>4 horas extra al día, 6 días a la semana: 1.248 horas al año con recargo del 25 %.</p></div><div class="c"><div class="t"><span class="n">04</span><b>Recargo dominical</b></div><div class="v">$1.323.855</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:6%;background:#9C3F20;border-radius:4px"></div></div><div class="s">6 % del total</div><p>36 domingos trabajados sin el recargo del 75 % (80 % desde julio de 2025).</p></div><div class="c"><div class="t"><span class="n">05</span><b>Horas extras en domingo</b></div><div class="v">$1.729.553</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:7%;background:#9C3F20;border-radius:4px"></div></div><div class="s">7 % del total</div><p>4 horas extra por cada domingo trabajado, sin pago ni descanso compensatorio.</p></div><div class="c"><div class="t"><span class="n">06</span><b>Prima de servicios</b></div><div class="v">$1.623.500</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:7%;background:#9C3F20;border-radius:4px"></div></div><div class="s">7 % del total</div><p>Un salario mínimo con auxilio de transporte por el año completo, pagado en dos cuotas.</p></div><div class="c"><div class="t"><span class="n">07</span><b>Cesantías e intereses</b></div><div class="v">$1.818.320</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:8%;background:#9C3F20;border-radius:4px"></div></div><div class="s">8 % del total</div><p>Cesantías de $1.623.500 sin consignar al fondo, más intereses del 12 % ($194.820).</p></div><div class="c"><div class="t"><span class="n">08</span><b>Vacaciones</b></div><div class="v">$711.750</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:3%;background:#9C3F20;border-radius:4px"></div></div><div class="s">3 % del total</div><p>15 días hábiles de descanso remunerado causados en el año y no reconocidos.</p></div><div class="c"><div class="t"><span class="n">09</span><b>Seguridad social y caja</b></div><div class="v">$2.094.424</div><div style="height:8px;background:#E8E3D6;border-radius:4px"><div style="height:8px;width:9%;background:#9C3F20;border-radius:4px"></div></div><div class="s">9 % del total</div><p>6 meses sin pensión, salud ni ARL ($1.752.784) y sin aportes a caja ($341.640).</p></div><div class="c"><div class="t"><span class="n">10</span><b>Dotación de trabajo</b></div><div class="v">En especie</div><div class="s">Sin cuantía fija: valor de 3 dotaciones</div><p>Debía entregarse 3 veces al año (abril, agosto y diciembre) y nunca se entregó.</p></div></div>
+</div>
+<div style="background:#9C3F20;color:#FAF9F5;border-radius:10px;padding:30px 36px;display:flex;justify-content:space-between;align-items:center;font-family:Inter,Arial,sans-serif">
+<div><div style="font-size:14px;letter-spacing:.12em;text-transform:uppercase">Total estimado, sin dotación</div><div style="font-size:17px;margin-top:6px">de derechos no reconocidos en 2025</div></div>
+<b style="font:800 60px Fraunces,Georgia,serif">≈ $23.636.000</b>
+</div>
+<section class="settlement-summary" aria-labelledby="settlement-title">
+<h2 id="settlement-title">Desglose matem&aacute;tico de acreencias laborales (Vigencia 2025)</h2>
+<div class="settlement-scroll"><table class="settlement-table">
+<thead><tr><th scope="col">&Iacute;tem</th><th scope="col">Rubro analizado</th><th scope="col">Procedimiento de liquidaci&oacute;n</th><th scope="col">Valor liquidado</th></tr></thead>
+<tbody>
+<tr><td>01</td><td>Nivelaci&oacute;n al SMLMV</td><td>Diferencia mensual de &#36;223.500 (&#36;1.423.500 - &#36;1.200.000) &times; 12 meses</td><td>&#36;2.682.000</td></tr>
+<tr><td>02</td><td>Auxilio de transporte legal</td><td>Cuota mensual de &#36;200.000 &times; 12 meses laborados</td><td>&#36;2.400.000</td></tr>
+<tr><td>03</td><td>Trabajo suplementario diurno</td><td>1.248 horas extras anuales (4 h/d&iacute;a &times; 6 d&iacute;as &times; 52 sem.) &times; &#36;7.414,06</td><td>&#36;9.252.750</td></tr>
+<tr><td>04</td><td>Recargo por labor dominical</td><td>18 domingos al 75 % (&#36;640.575) + 18 domingos al 80 % (&#36;683.280)</td><td>&#36;1.323.855</td></tr>
+<tr><td>05</td><td>Horas extras en jornada dominical</td><td>72 h al 200 % (&#36;854.100) + 72 h al 205 % (&#36;875.453)</td><td>&#36;1.729.553</td></tr>
+<tr><td>06</td><td>Prima legal de servicios</td><td>1 salario m&iacute;nimo integrado (&#36;1.423.500 + &#36;200.000) por 360 d&iacute;as</td><td>&#36;1.623.500</td></tr>
+<tr><td>07</td><td>Cesant&iacute;as e intereses anuales</td><td>Cesant&iacute;as (&#36;1.623.500) + rendimiento legal del 12 % (&#36;194.820)</td><td>&#36;1.818.320</td></tr>
+<tr><td>08</td><td>Compensaci&oacute;n de vacaciones</td><td>15 d&iacute;as h&aacute;biles causados sobre SMLMV (&#36;1.423.500 &divide; 2)</td><td>&#36;711.750</td></tr>
+<tr><td>09</td><td>Aportes a Seguridad Social y Caja</td><td>Cotizaci&oacute;n empleador 6 meses: Salud, Pensi&oacute;n y ARL (&#36;1.752.784) + CCF (&#36;341.640)</td><td>&#36;2.094.424</td></tr>
+<tr><td>10</td><td>Dotaci&oacute;n de calzado y vestido</td><td>Suministro obligatorio cuatrimestral (3 entregas en el a&ntilde;o)</td><td>En especie</td></tr>
+</tbody>
+<tfoot><tr><td></td><td>Consolidado total adeudado</td><td>No incluye valor comercial de dotaciones</td><td>&asymp; &#36;23.636.000</td></tr></tfoot>
+</table></div>
+<p class="settlement-note">Par&aacute;metros normativos aplicados: Liquidaci&oacute;n proyectada sobre el SMLMV 2025 (&#36;1.423.500), auxilio de transporte (&#36;200.000) y valor hora ordinaria de &#36;5.931,25 (divisor 240 h). Se contabilizan 4 horas extras diarias en jornada ordinaria de lunes a s&aacute;bado y 36 domingos trabajados en el a&ntilde;o (aplicando el incremento gradual al 80 % desde julio de 2025 establecido en la Ley 2466 de 2025).</p>
+</section><div>
+<p class="k">Conclusiones</p>
+<div class="g"><div class="k2"><h3>Derechos irrenunciables</h3><p>Un contrato verbal es válido y la ley protege al trabajador igual que uno escrito (Constitución, arts. 25 y 53).</p></div><div class="k2"><h3>Precarización del empleo</h3><p>Salario bajo el mínimo, jornadas de 12 horas y falta de prestaciones afectan la salud y la dignidad de Juan y su familia.</p></div><div class="k2"><h3>Pasivo laboral acumulado</h3><p>La empresa le debe cerca de $23,6 millones, sin contar intereses de mora ni sanciones.</p></div><div class="k2"><h3>Trabajo digno, paz y solidaridad</h3><p>El empleo justo es una base del desarrollo humano y de una sociedad en paz.</p></div></div>
+</div>
+<div>
+<p class="k">¿Qué puede hacer Juan?</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px"><div class="st"><span class="n">1</span><div><b>Reclamo y conciliación</b><p>Reclamar por escrito a la empresa y pedir una conciliación.</p></div></div><div class="st"><span class="n">2</span><div><b>Ministerio del Trabajo</b><p>Presentar queja ante la inspección de trabajo de su zona.</p></div></div><div class="st"><span class="n">3</span><div><b>Justicia laboral</b><p>Demandar si no hay acuerdo. Las prestaciones prescriben a los 3 años.</p></div></div></div>
+</div>
+<div style="border-top:1px solid #C9C4B5;padding-top:24px;font:400 14px/1.6 Inter,Arial,sans-serif;color:#3F3D38">
+<p style="margin:0 0 8px"><b>Fuentes:</b> Constitución Política (arts. 25 y 53), Código Sustantivo del Trabajo, Ley 50 de 1990, Ley 100 de 1993, Ley 2101 de 2021, Ley 2466 de 2025, SMMLV 2025 de $1.423.500 y auxilio de transporte de $200.000. Cálculos aproximados.</p>
+<p style="margin:0"><b>Elaborado por:</b> Johan Camilo Rodriguez Bautista · SENA · Analisis y desarrollo de software · Ficha: 3186635 · 23 de noviembre de 2026</p>
+</div>
+</div></main></div><script>
+(() => {
+  const heading = document.querySelector('.section-heading');
+  if (!heading) return;
+  const section = heading.parentElement;
+  section.classList.add('rights-section');
+  const distribution = document.createElement('div');
+  distribution.className = 'distribution';
+  distribution.innerHTML = '<p class="distribution-title">Composici&oacute;n proporcional de los rubros</p><div class="distribution-bar" role="img" aria-label="Horas extras 39 %, Salario y auxilio 21 %, Prestaciones y vacaciones 18 %, Dominicales 13 %, Seguridad social 9 %"><span></span><span></span><span></span><span></span><span></span></div><div class="distribution-legend"><span class="legend-item"><i class="legend-dot" style="background:#A64B2A"></i>Horas extras <b>39 %</b></span><span class="legend-item"><i class="legend-dot" style="background:#141413"></i>Salario y auxilio <b>21 %</b></span><span class="legend-item"><i class="legend-dot" style="background:#D97757"></i>Prestaciones y vacaciones <b>18 %</b></span><span class="legend-item"><i class="legend-dot" style="background:#9C3F20"></i>Dominicales <b>13 %</b></span><span class="legend-item"><i class="legend-dot" style="background:#5A574F"></i>Seguridad social <b>9 %</b></span></div>';
+  heading.after(distribution);
+  const norms = ['Art. 145 CST','Ley 15 de 1959','Art. 168 CST','Art. 179 CST','Art. 168 CST','Art. 306 CST','Art. 249 CST','Art. 186 CST','Ley 100 de 1993','Art. 230 CST'];
+  const icons = [
+    '<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/>',
+    '<path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.5"/><circle cx="18" cy="18" r="1.5"/>',
+    '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 14h3m3 0h2"/>',
+    '<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M8 14h3"/>',
+    '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 14h3m3 0h2"/>',
+    '<path d="M5 8h14l-1 12H6L5 8zM8 8V6a4 4 0 0 1 8 0v2"/><path d="M9 13h6"/>',
+    '<path d="M5 4v5a7 7 0 0 0 14 0V4M5 4H3m2 3H3m16-3h2m-2 3h2M12 16v4m-4 0h8"/>',
+    '<path d="M12 3 20 6v5c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-3z"/><path d="m9 12 2 2 4-4"/>',
+    '<path d="m4 7 4-3 4 3 4-3 4 3-2 5-2-1v9H8v-9l-2 1z"/><path d="M9 11h6"/>'
+  ];
+  document.querySelectorAll('.rights-section .c').forEach((card, i) => {
+    const top = card.querySelector('.t');
+    const number = top.querySelector('.n');
+    const icon = document.createElement('span');
+    icon.className = 'icon-box';
+    icon.setAttribute('aria-hidden','true');
+    icon.innerHTML = '<svg viewBox="0 0 24 24">' + icons[i] + '</svg>';
+    top.prepend(icon);
+    const meta = document.createElement('span');
+    meta.className = 'card-meta';
+    const norm = document.createElement('span');
+    norm.className = 'legal-ref';
+    norm.textContent = norms[i];
+    top.append(meta);
+    meta.append(number, norm);
+    const value = card.querySelector('.v');
+    const percent = card.querySelector('.s');
+    const oldTrack = card.querySelector(':scope > div[style*="height:8px"]');
+    const amount = document.createElement('div');
+    amount.className = 'amount-row';
+    value.before(amount);
+    amount.append(value, percent);
+    if (oldTrack) {
+      oldTrack.classList.add('progress-track');
+      const inner = oldTrack.firstElementChild;
+      if (inner) { inner.style.height = '100%'; inner.style.background = '#A64B2A'; }
+      oldTrack.style.height = '4px';
+      oldTrack.style.background = '#F0ECE3';
+      oldTrack.style.borderRadius = '99px';
+    }
+    if (i === 2) {
+      card.classList.add('featured');
+      const tag = document.createElement('div');
+      tag.className = 'lead-label';
+      tag.textContent = 'Principal rubro adeudado';
+      top.after(tag);
+    }
+  });
+})();
+</script>
+</body>
+</html>
